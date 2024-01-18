@@ -49,3 +49,40 @@
   line-height: 30px;
 }
 
+.btnContainer{
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.findBtn{
+  padding: 12px 20px;
+  background-color: #F1A501;
+  border: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+
+.playBtn{
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  width: auto;
+  gap: 5px;
+}
+
+.play{
+  height: 35px;
+  color: #DF6951;
+}
+
+.playText{
+  font-family: "Poppins";
+  color: #181E4B;
+  font-size: 13px;
+}

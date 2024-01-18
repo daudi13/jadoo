@@ -26,7 +26,7 @@ const Navbar = ({
         <Image src="/Logo.png" alt="logo" width={115} height={34} />
         <div className={styles.navItems}>
           <Link page="Home" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
-          <Link page="Destinations" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
+          <Link page="Offers" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
           <Link page="Hotel" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
           <Link page="Flight" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
           <Link page="Bookings" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
