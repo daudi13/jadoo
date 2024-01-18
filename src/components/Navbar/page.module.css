@@ -1,0 +1,58 @@
+.container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.scrollActive{
+  background-color: #006472;
+  transition: all 0.3s ease-in-out;
+}
+
+.scrollActive .link{
+  color: azure;
+}
+
+.scrollActive .activeLink{
+  color: #DF6951;
+}
+
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link{
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+
+.activeLink{
+  color: #DF6951;
+}
+
+.navItems{
+  display: flex;
+  gap: 55px;
+}
+
+.actionBtn{
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+
+.mainBtn{
+  padding: 9px 22px;
+  border: 2px solid black;
+  border-radius: 10px;
+}

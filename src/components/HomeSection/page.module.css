@@ -1,0 +1,51 @@
+.home {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.left{
+  max-width: 545px;
+}
+
+.semiTitle{
+  font-family: "Poppins", sans-serif;
+  font-weight: "700";
+  color: #DF6951;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.title{
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 75px;
+  line-height: 80px;
+  font-weight: "700";
+  color: #181E4B;
+  z-index: 2000;
+}
+
+.strike{
+  position: relative;
+}
+
+.strike::after{
+  position: absolute;
+  content: url("/strike.png");
+  bottom: 0;
+  right: -140px;
+}
+
+.heroText{
+  font-family: "Poppins", sans-serif;
+  color: #5E6282;
+  width: 477px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
