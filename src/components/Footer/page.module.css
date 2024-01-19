@@ -1,0 +1,83 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.logo{
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  color: #181E4B;
+  font-weight: 500;
+}
+
+.content{
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #181E4B;
+  font-weight: 500;
+  width: 207px;
+}
+
+.title{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #181E4B;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.links{
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #5E6282;
+  font-weight: 500;
+}
+
+.links + .links{
+  margin-top: 10px;
+} 
+
+.lastbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon{
+  font-size: 25px;
+  color: #181E4B;
+}
+
+.icon + .icon{
+  margin-left: 13px;
+}
+
+.discover{
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #5E6282;
+  font-weight: 500;
+}
+
+.downloadApps{
+  display: flex;
+  gap: 20px;
+}
+
+.copyright{
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #5E6282;
+}
+

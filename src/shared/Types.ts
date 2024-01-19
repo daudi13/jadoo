@@ -15,4 +15,9 @@ export interface OfferItems {
   content: string
 }
 
-
+export interface Destination {
+  img: string,
+  destinations: string,
+  price: string,
+  duration: string
+}
