@@ -7,7 +7,6 @@ import HomeSection from '@/components/HomeSection/HomeSection'
 import Offers from '@/components/Offers/Offers'
 import Destinations from '@/components/Destinations/Destinations'
 import Book from '@/components/Book/Book'
-import Testimonial from '@/components/testimonial/Testimonial'
 import Companies from '@/components/companies/Companies'
 import Subscribe from '@/components/subscribe/Subscribe'
 import Footer from '@/components/Footer/Footer'
@@ -39,7 +38,6 @@ export default function Home() {
       <Offers />
       <Destinations />
       <Book />
-      <Testimonial />
       <Companies />
       <Subscribe />
       <Footer />

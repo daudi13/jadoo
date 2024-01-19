@@ -19,7 +19,7 @@ const HomeSection = () => {
           </button>
         </div>
       </div>
-      <Image src="/Traveller.png" alt="smiling traveller girl" width={765} height={764} />
+      <Image src="/Traveller.png" alt="smiling traveller girl" className={styles.imageMain} width={765} height={764} />
     </section>
   )
 }

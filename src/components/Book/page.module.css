@@ -1,0 +1,164 @@
+.booking{
+  display: flex;
+  margin-top: 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.semiTitle{
+  font-family: "Open sans", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #5E6282;
+  margin-bottom: 10px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sectionTitle{
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 50px;
+  width: 500px;
+  line-height: 55px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #14183E;
+  margin-bottom: 30px;
+}
+
+.pointer{
+  display: flex;
+  align-items: center;
+}
+
+.pointer + .pointer {
+  margin-top: 20px;
+}
+
+.iconBox{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.contentTitle{
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #5E6282;
+}
+
+.content{
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  width: 447px;
+  color: #5E6282;
+}
+
+.icons{
+  display: flex;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.circle{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #84829A;
+}
+
+.card{
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.trip{
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bottomSec{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #84829A;
+}
+
+.date{
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #84829A;
+}
+
+.cityIcon{
+  margin-right: 10px;
+}
+
+.going{
+  display: flex;
+  align-items: center;
+  gap: 10;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.heartIcon{
+  color: #84829A;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1023px) {
+  .booking{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .semiTitle{
+    text-align: center;
+    width: 100%;
+  }
+
+  .sectionTitle{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  .right{
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:425px) {
+
+  .sectionTitle{
+    font-size: 43px;
+    line-height: 40px;
+  }
+  .content{
+    width: 300px;
+  }
+}

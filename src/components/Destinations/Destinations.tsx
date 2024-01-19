@@ -29,7 +29,7 @@ type Props = {}
 
 const Destinations = (props: Props) => {
   return (
-    <section  className={styles.offerWrapper}>
+    <section  className={styles.offerWrapper} id={SelectPage.Hotel}>
       <h4 className={styles.semiTitle}>Top Selling</h4>
       <h1 className={styles.title}>Top Destinations</h1>
       <div className={styles.boxes}>
@@ -44,7 +44,7 @@ const Destinations = (props: Props) => {
                     <p className={styles.text}>{item?.destinations}</p>
                     <p className={styles.text}>{item?.price}</p>
                   </div>
-                  <div className={styles.bottom} id={SelectPage.Hotel}>
+                  <div className={styles.bottom}>
                     <FaLocationArrow />
                     <p className={styles.trip}>{item?.duration}</p>
                   </div>

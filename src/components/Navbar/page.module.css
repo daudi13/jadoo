@@ -7,10 +7,13 @@
   left: 0;
   right: 0;
 }
-
 .scrollActive{
   background-color: #006472;
   transition: all 0.2s ease-in-out;
+}
+
+.ham{
+  display: none;
 }
 
 .scrollActive .link{
@@ -25,7 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1060px;
+  width: 1023px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -55,4 +58,79 @@
   padding: 9px 22px;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+.navDrawer{
+  display: none;
+}
+
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100;
+  height: 100vh;
+  background-color: #DF6951;
+  z-index: 1500;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 1023px){
+  .navBar{
+    width: auto;
+    padding: 0 50px;
+  }
+
+
+  .navDrawer{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: rgba(159, 226, 235, 0.9);
+  z-index: 2000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  backdrop-filter: blur(3px);
+}
+
+.close{
+  align-self: flex-end;
+  font-size: 50px;
+
+}
+
+.linkBox{
+  align-self: center;
+  margin-top: 40%;
+}
+
+.linkItems{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.link{
+  font-size: 23px;
+}
+
+  .navItems{
+    display: none;
+  }
+
+  .actionBtn{
+    display: none;
+  }
+
+  .ham{
+    display: block;
+    font-size: 40px;
+  }
 }

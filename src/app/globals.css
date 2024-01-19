@@ -17,3 +17,13 @@ body{
   background-color: #fff;
   margin-top: 120px;
 }
+
+.navDrawer body{
+  overflow: hidden !important;
+}
+
+@media screen and (max-width: 1023px) {
+  body{
+    max-width: none;
+  }
+}

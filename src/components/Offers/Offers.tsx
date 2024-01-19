@@ -37,7 +37,7 @@ const Offers = (props: Props) => {
   return (
     <section id={SelectPage.Offers} className={styles.offerWrapper}>
       <h4 className={styles.semiTitle}>category</h4>
-      <h1 className={styles.title}>We offer Best Services</h1>
+      <h1 className={styles.title}>We offer the Best Services</h1>
       <div className={styles.boxes}>
         {
           offerData.map((item: OfferItems, index: number) => {

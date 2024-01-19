@@ -7,6 +7,7 @@
 
 
 
+
 .left{
   max-width: 545px;
 }
@@ -85,4 +86,56 @@
   font-family: "Poppins";
   color: #181E4B;
   font-size: 13px;
+}
+
+
+@media screen and (max-width: 1023px){
+  .home{
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .left{
+    text-align: center;
+  }
+
+  .heroText{
+    text-align: center;
+    width: 100%;
+  }
+
+  .btnContainer{
+  justify-content: center;
+  }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .semiTitle{
+    font-size: 16px;
+  }
+
+  .title{
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .heroText{
+    font-size: 14px;
+    line-height: normal;
+    margin: 0 auto;
+    width: 350px;
+  }
+
+  .strike::after{
+    display: none;
+  }
+  
+  .imageMain{
+    width: 405px;
+    height: auto;
+  }
 }

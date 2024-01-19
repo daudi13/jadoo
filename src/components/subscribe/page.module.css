@@ -1,0 +1,89 @@
+.subscribeContainer{
+  padding: 88px;
+  text-align: center;
+  background-color: #e7e2f5;
+  border-top-left-radius: 150px;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 100;
+}
+
+
+
+.subscribeContainer::after{
+  content: url("/plane.png");
+  position: absolute;
+  top: -30px;
+  right: -20px;
+}
+
+.subscribeContainer::before{
+  content: url("/Group5.png");
+  position: absolute;
+  z-index: 0;
+  bottom: -50px;
+  right: -100px;
+}
+
+.subscribeText{
+  font-size: 33px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 54px;
+  color: #5E6282;
+  margin-bottom: 50px;
+}
+
+.input{
+  padding: 14px 21px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.orangeBtn{
+  margin-left: 30px;
+  padding: 14px 21px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #FF946D;
+  border: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .subscribeContainer{
+    border-top-left-radius: 0;
+    margin-top: 100px;
+    padding: 120px 30px;
+
+  }
+
+  .subscribeText{
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  .subscribeContainer::before{
+    display: none;
+  }
+
+  .subscribeContainer::after{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .orangeBtn{
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
