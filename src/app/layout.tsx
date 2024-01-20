@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="/Rome.png" />
+        <meta property="og:image" content="/Rome.jpg" />
         <meta property="og:image:type" content="website" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="2400" />
