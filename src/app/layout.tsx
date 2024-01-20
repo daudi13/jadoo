@@ -44,8 +44,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="/Traveller.png" />
+        <meta property="og:image" content="/Rome.png" />
         <meta property="og:image:type" content="website" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="2400" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
