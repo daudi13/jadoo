@@ -48,6 +48,10 @@ export default function RootLayout({
         <meta property="og:image:type" content="website" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="2400" />
+        <meta name="twitter:image" content="https://unsplash.com/photos/aerial-view-of-two-blue-boats-LNdpi8Yzi34" />
+        <meta name="twitter:image:type" content="twitter" />
+        <meta name="twitter:image:width" content="1920" />
+        <meta name="twitter:image:height" content="2400" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
