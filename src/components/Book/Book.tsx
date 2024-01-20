@@ -9,13 +9,26 @@ import { MdOutlinePayment } from "react-icons/md";
 import { FaTaxi, FaLeaf } from "react-icons/fa";
 import { CiMap } from "react-icons/ci";
 import { FaPaperPlane } from "react-icons/fa6";
+import { motion } from 'framer-motion';
 
-type Props = {}
+type Props = {
+  setSelectedPage: (value: SelectPage) => void
+}
 
-const Book = (props: Props) => {
+const Book = ({setSelectedPage}: Props) => {
   return (
-    <section id={SelectPage.Bookings} className={styles.booking}>
-      <div className={styles.right}>
+    <motion.section
+      onViewportEnter={() => setSelectedPage(SelectPage.Bookings)}
+      id={SelectPage.Bookings}
+      className={styles.booking}>
+      <motion.div className={styles.right}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.5 }} transition={{ delay: 0.3, duration: 0.7 }} variants={{
+      hidden: { opacity: 0, x: -100 },
+      visible: {opacity:1, x: 0}
+      }}
+      >
         <p className={styles.semiTitle}>Easy and Fast</p>
         <h3 className={styles.sectionTitle}>Book your next trip in 3 easy steps</h3>
         <div className={styles.pointer}>
@@ -45,8 +58,15 @@ const Book = (props: Props) => {
             </p>
           </div>
         </div>
-      </div>
-      <div className={styles.card}>
+      </motion.div>
+      <motion.div className={styles.card}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.5 }} transition={{ delay: 0.3, duration: 0.8 }} variants={{
+      hidden: { opacity: 0, y: -100 },
+      visible: {opacity:1, y: 0}
+        }}
+      >
         <Image src="/rectangle17.jpg" width={321} height={161} alt="woman-red-dress" />
         <p className={styles.trip}>Trip to Greece</p>
         <p className={styles.date}>14-29 June | by Robbin joseph</p>
@@ -62,8 +82,8 @@ const Book = (props: Props) => {
           </div>
           <CiHeart className={styles.heartIcon} />
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 

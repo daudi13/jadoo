@@ -3,6 +3,7 @@ import React from 'react'
 import styles from "./page.module.css";
 import Image from 'next/image';
 import { FaLocationArrow } from "react-icons/fa6";
+import { motion } from 'framer-motion';
 
 const destinationData: Array<Destination> = [
   {
@@ -25,11 +26,23 @@ const destinationData: Array<Destination> = [
   },
 ]
 
-type Props = {}
+type Props = {
+  setSelectedPage: (value: SelectPage) => void
+}
 
-const Destinations = (props: Props) => {
+const Destinations = ({setSelectedPage}: Props) => {
   return (
-    <section  className={styles.offerWrapper} id={SelectPage.Hotel}>
+    <motion.section
+      className={styles.offerWrapper}
+      id={SelectPage.Hotel}
+      onViewportEnter={() => setSelectedPage(SelectPage.Hotel)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }} transition={{ delay: 0.3, duration: 0.7 }} variants={{
+      hidden: { opacity: 0, scale: 0.4, y: -100 },
+      visible: {opacity:1, scale: 1,  y: 0}
+      }}
+    >
       <h4 className={styles.semiTitle}>Top Selling</h4>
       <h1 className={styles.title}>Top Destinations</h1>
       <div className={styles.boxes}>
@@ -54,7 +67,7 @@ const Destinations = (props: Props) => {
           })
         }
       </div>
-    </section>
+    </motion.section>
   )
 }
 

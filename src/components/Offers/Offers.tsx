@@ -1,11 +1,25 @@
 import { OfferItems, SelectPage } from '@/shared/Types';
 import React from 'react';
 import styles from "./page.module.css";
-import Image from 'next/image';
 import { MdOutlineSatelliteAlt } from "react-icons/md";
 import { FaPlaneDeparture } from "react-icons/fa";
 import { ImCog } from "react-icons/im";
 import { MdEventAvailable } from "react-icons/md"
+import { motion } from "framer-motion";
+
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.4}
+  }
+}
+
+const childVariant = {
+  hidden: { opacity: 0, scale: 0.5, y: 100 },
+  visible: {opacity: 1, scale: 1, y:0}
+}
+
 
 
 const offerData: Array<OfferItems> = [
@@ -31,27 +45,36 @@ const offerData: Array<OfferItems> = [
   },
 ]
 
-type Props = {}
+type Props = {
+  setSelectedPage: (value: SelectPage) => void
+}
 
-const Offers = (props: Props) => {
+const Offers = ({setSelectedPage}: Props) => {
   return (
-    <section id={SelectPage.Offers} className={styles.offerWrapper}>
+    <motion.section id={SelectPage.Offers}
+      onViewportEnter={() => setSelectedPage(SelectPage.Offers)}
+      className={styles.offerWrapper}>
       <h4 className={styles.semiTitle}>category</h4>
       <h1 className={styles.title}>We offer the Best Services</h1>
-      <div className={styles.boxes}>
+      <motion.div className={styles.boxes}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.5 }}
+      variants={container}
+      >
         {
           offerData.map((item: OfferItems, index: number) => {
             return (
-              <div key={index} className={styles.box}>
+              <motion.div key={index} className={styles.box} variants={childVariant}>
                 <div>{item?.icon}</div>
                 <h4 className={styles.boxTitle}>{item?.title}</h4>
                 <p className={styles.content}>{item?.content}</p>
-              </div>
+              </motion.div>
             )
           })
         }
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 

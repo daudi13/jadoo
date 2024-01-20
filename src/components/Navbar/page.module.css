@@ -20,6 +20,15 @@
   color: azure;
 }
 
+.scrollActive .actionBtn{
+  color: #fff;
+}
+
+.scrollActive .mainBtn{
+  background-color: #F1A501;
+  border: none;
+}
+
 .scrollActive .activeLink{
   color: #DF6951;
 }
@@ -76,6 +85,17 @@
   overflow: hidden;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+}
+
 
 @media screen and (max-width: 1023px){
   .navBar{
@@ -90,18 +110,19 @@
   right: 0;
   width: 70%;
   height: 100vh;
-  background-color: rgba(159, 226, 235, 0.9);
+  background-color: #006472;
   z-index: 2000;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 20px 50px;
   backdrop-filter: blur(3px);
+  border-left: 2px solid black;
 }
 
 .close{
   align-self: flex-end;
-  font-size: 50px;
+  font-size: 40px;
 
 }
 

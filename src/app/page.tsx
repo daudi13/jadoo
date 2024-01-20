@@ -34,11 +34,11 @@ export default function Home() {
   return (
     <main>
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <HomeSection />
-      <Offers />
-      <Destinations />
-      <Book />
-      <Companies />
+      <HomeSection setSelectedPage={setSelectedPage} />
+      <Offers setSelectedPage={setSelectedPage}/>
+      <Destinations setSelectedPage={setSelectedPage}/>
+      <Book setSelectedPage={setSelectedPage}/>
+      <Companies setSelectedPage={setSelectedPage}/>
       <Subscribe />
       <Footer />
       <Image src="/Decore.png" alt='props' width={766} height={872} className={styles.background} />

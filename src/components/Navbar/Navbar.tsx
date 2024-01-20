@@ -31,8 +31,8 @@ const Navbar = ({
           <Link page="Home" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
           <Link page="Offers" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
           <Link page="Hotel" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
-          <Link page="Flight" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
           <Link page="Bookings" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
+          <Link page="Flight" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
         </div>
         <div className={styles.actionBtn}>
           <p>Login</p>
@@ -40,18 +40,19 @@ const Navbar = ({
         </div>
         <GiHamburgerMenu className={styles.ham} onClick={() => setIsMenuToggled(!isMenuToggled)}/>
         </div>
+        {isMenuToggled && <div className={styles.overlay} onClick={() => setIsMenuToggled(false)}/>}
       </nav>
       {
         !isAboveMediumScreen && isMenuToggled && (
-          <div className={styles.navDrawer}>
+          <div className={styles.navDrawer} >
             <IoMdCloseCircleOutline className={styles.close} onClick={() => setIsMenuToggled(false)}/>
-            <div className={styles.linkBox}>
+            <div className={styles.linkBox} onClick={() => setIsMenuToggled(false)}>
               <div className={styles.linkItems}>
-              <Link page="Home" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                <Link page="Home" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page="Offers" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page="Hotel" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page="Flight" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page="Bookings" selectPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                <Link page="Bookings" selectPage={selectedPage} setSelectedPage={setSelectedPage} />
               </div>
             </div>
           </div>
